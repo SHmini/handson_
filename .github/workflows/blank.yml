@@ -19,6 +19,7 @@ jobs:
 
       - name: Run a one-line script
         run: |
+          echo ${{ github.ref }}
           echo ${{ github.head_ref }}
           echo ${{ github.action_ref }}
           echo ${{ github.base_ref }}

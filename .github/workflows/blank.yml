@@ -20,3 +20,4 @@ jobs:
       - name: Run a one-line script
         run: |
           echo ${{ github.head_ref }}
+          echo ${{ github.action_ref }}

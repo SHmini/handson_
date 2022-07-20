@@ -23,3 +23,6 @@ jobs:
       - name: Run a one-line script
         run: |
           gh workflow run blank2.yml --ref task00 -f nightly=true
+          
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3

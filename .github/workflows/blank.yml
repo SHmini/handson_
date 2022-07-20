@@ -21,3 +21,4 @@ jobs:
         run: |
           echo ${{ github.head_ref }}
           echo ${{ github.action_ref }}
+          echo ${{ github.base_ref }}

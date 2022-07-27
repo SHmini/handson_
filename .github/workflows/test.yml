@@ -1,5 +1,4 @@
-
-name: CI
+name: CI2
 
 on:
   pull_request:
@@ -12,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Unnamed
       - run: |
-        echo $GITHUB_REF	
-        echo ${{ github.ref }}	
-        echo ${{ github.ref_name }}	
-        echo ${{ github.head_ref }}
-        echo ${{ github.base_ref }}
+          echo "$GITHUB_REF"	
+          echo ${{ github.ref }}	
+          echo ${{ github.ref_name }}	
+          echo ${{ github.head_ref }}
+          echo ${{ github.base_ref }}

@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Unnamed
+      - name: Unnamed St
       - run: |
           echo GITHUB_REF "$GITHUB_REF"	
           echo REF        ${{ github.ref }}	

@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Unnamed St
-      - run: |
+        run: |
           echo GITHUB_REF "$GITHUB_REF"	
           echo REF        ${{ github.ref }}	
           echo REF_NAME   ${{ github.ref_name }}	

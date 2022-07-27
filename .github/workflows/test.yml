@@ -1,0 +1,20 @@
+name: CI2
+
+on:
+  pull_request:
+  push:
+
+
+jobs:
+  build:
+    name: auau
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Unnamed St
+        run: |
+          echo GITHUB_REF "$GITHUB_REF"
+          echo REF        ${{ github.ref }}
+          echo REF_NAME   ${{ github.ref_name }}
+          echo HEAD_REF   ${{ github.head_ref }}
+          echo BASE_REF   ${{ github.base_ref }}

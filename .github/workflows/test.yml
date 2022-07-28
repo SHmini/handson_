@@ -19,6 +19,9 @@ jobs:
           echo HEAD_REF   ${{ github.head_ref }}
           echo BASE_REF   ${{ github.base_ref }}
 
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Unnamed St2
         run: |
           echo ${{ hashFiles('src/**/*') }}
